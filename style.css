@@ -1,0 +1,54 @@
+.home{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./Screenshot\ 2024-06-01\ 234258.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+h1{
+    color: rgb(247, 0, 0);
+    font-size: 70px;
+
+}
+.mad{
+    width: 90%;
+    height: 100%;
+
+}
+
+.description {
+    /* اللون الأحمر الداكن */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around; /* توزيع العناصر بشكل متساوي */
+    flex-wrap: wrap; /* التفاف العناصر إذا لم يكن هناك مساحة كافية */
+}
+
+.manager, .nurse, .doctor, .reception {
+    flex: 1 1 22%; /* توزيع العناصر في 4 أعمدة */
+    margin: 10px;
+}
+
+.mad {
+    border-radius: 8px; /* زوايا دائرية للصورة */
+}
+
+.text p, .description p {
+    color: #fff; /* نص أبيض */
+}
+
+h2{
+    font-size: 50px;
+    color: brown;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
