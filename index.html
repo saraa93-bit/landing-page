@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <a class="navbar-brand w-25" href="#">
-            <img class=" w-50" src="./logo.png" alt="Hospital Logo">
+            <img class=" w-50" src="./Smart care.png" alt="Logo">
         </a>
         <form class="form-inline mx-auto">
             <div class="input-group">
@@ -53,19 +53,19 @@
                 <div class="center">
                     <div class="manager spacing">
                         <img class="mad w-100" src="./pexels-karolina-grabowska-4386467.jpg" alt="Manager">
-                        <p>Manager roles</p>
+                        <p>Manager </p>
                     </div>
                     <div class="nurse spacing">
-                        <img class="mad w-100" src="./pexels-pixabay-263402.jpg" alt="Nurse">
-                        <p>Nurse roles</p>
+                        <img class="mad w-100" src="./pexels-totalshape-2383010.jpg" alt="Nurse">
+                        <p>Nurse </p>
                     </div>
                     <div class="doctor spacing">
                         <img class="mad w-100" src="./Screenshot 2024-06-01 234258.png" alt="Doctor">
-                        <p>Doctor roles</p>
+                        <p>Doctor </p>
                     </div>
                     <div class="reception spacing">
                         <img class="mad w-100" src="./pexels-shvetsa-4167541.jpg" alt="Receptionist">
-                        <p>Receptionist roles</p>
+                        <p>Receptionist </p>
                     </div>
                 </div>
 
@@ -80,8 +80,8 @@
             <div class="col-12 text-center">
                 <h2>watch us</h2>
                 <h5><a href="https://www.linkedin.com/in/saraa-talat-aa0951112/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Br%2F4YFhcQR3WUwruRSYUAtw%3D%3D" target="_blank">saraa talat</a></h5>
-                <h5><a href="https://www.linkedin.com/in/shimaa-fikry" target="_blank">shimaa fikry</a></h5>
-                <h5><a href="https://www.linkedin.com/in/mahmoud-fouad" target="_blank">mahmoud foad</a></h5>
+                <h5><a href="https://www.linkedin.com/in/shaimafikry/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B2kA68LlyTLehQxtTJIgY9Q%3D%3D" target="_blank">shimaa fikry</a></h5>
+                <h5><a href="https://www.linkedin.com/in/mahmoud-elfouad-73b88521b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B2kA68LlyTLehQxtTJIgY9Q%3D%3D" target="_blank">mahmoud fouad</a></h5>
 
             </div>
             <div class="col-12 text-center">
@@ -92,6 +92,28 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        
+            // Hide dropdown and lists when clicking outside
+            $(document).click(function(event) {
+                if (!$(event.target).closest('#menuToggle, .dropdown-menu').length) {
+                    $('.dropdown-menu').hide();
+                }
+            });
+        
+            // Toggle dropdown menu
+            $('#menuToggle').click(function(event) {
+                event.stopPropagation();
+                $('.dropdown-menu').toggle();
+            });
+        
+            // Prevent dropdown menu from closing when clicking inside
+            $('.dropdown-menu').click(function(event) {
+                event.stopPropagation();
+            });
+        });
+    </script>
 
 </body>
 
